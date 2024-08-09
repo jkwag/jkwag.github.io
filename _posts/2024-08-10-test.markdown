@@ -25,7 +25,7 @@ print('hello world')
 | c1234| centered      |   $12 |
 | qwer | are neat      |    $1 |
 
-[MIT 알고리즘 강의 링크](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)
+[MIT 알고리즘 강의 링크](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)[^1]
 
 1. first ordered item
     1. first sub item
