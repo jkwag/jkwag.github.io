@@ -12,7 +12,7 @@ toc_icon: "cog"
 # 테스트 블럭
 
 여기는 테스트 블럭이다.
----
+___
 ```python
 print('hello world')
 
@@ -36,6 +36,6 @@ print('hello world')
 
 another paragraph
 
-
+ $\frac{1}{\sqrt(2\pi\sigma^2)}e^\frac{(x-\mu)^2}{-2}$
 another line
 [^1]:MIT Opencourseware
