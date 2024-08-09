@@ -13,8 +13,16 @@ toc_icon: "cog"
 
 여기는 테스트 블럭이다.
 ---
-''' python
-{
-    print('hello world')
-}
-'''
+```python
+print('hello world')
+
+```
+> 에 대한 답은 hello world다
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| 23444      | right-aligned | $1600 |
+| c1234| centered      |   $12 |
+| qwer | are neat      |    $1 |
+
+[^1]:MIT Opencourseware
