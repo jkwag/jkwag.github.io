@@ -12,7 +12,9 @@ toc_icon: "cog"
 # 테스트 블럭
 
 여기는 테스트 블럭이다.
-___
-'''python
-print('hello world')
+---
+''' python
+{
+    print('hello world')
+}
 '''
