@@ -1,7 +1,7 @@
 ---
 title: "LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation_review"
 date: 2024-08-12
-categories: [Paper,EN]
+categories: [Paper_review,EN]
 tags: [LightGCN,collaborative filtering,recsys]
 toc: true
 toc_label: "Table of contents"
