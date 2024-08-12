@@ -18,7 +18,7 @@ toc_icon: "cog"
 나에게 구체적인 과정의 도식을 머릿 속에 새길 수 있는 키워드였다. 전체적인 머신 러닝 라이프사이클을 훑는 것은 앞으로 기업 실무에 들어갔을 때 내가 라이프 사이클의 어떤 부분을 
 맡게 될지, 그리고 앞으로 있을 해커톤에서 어떻게 하나의 전체적인 과정을 스무스하게 팀원들과 진행할 수 있을지 생각해 보게 만드는 내용이었다.
 
-또한, Supervised learning 중 ** Nearest Neighbor Classifier ** 는 predict의 complexity가 O(N)이기 때문에 비효율적인 학습 방법이라는 점도 흥미로웠다.
+또한, Supervised learning 중 **Nearest Neighbor Classifier** 는 predict의 complexity가 O(N)이기 때문에 비효율적인 학습 방법이라는 점도 흥미로웠다.
 알고리즘의 효율성과 머신 러닝의 연결 고리에 대해 생각해 보지 않던 나에게 그 필요성을 체감하게 되는 계기였다.
 
 Linear classifier에서 output을 softmax로 출력해서 0에서 1사이의 값으로 보여준다는 것도 흥미로웠는데 특히나 softmax를 쓰는 justification으로 결과값이 0 에서 1사이이고
