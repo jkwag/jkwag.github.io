@@ -17,3 +17,4 @@ toc_icon: "cog"
 없이는 classfication boundary가 linear 하기 때문에 복잡한 형태의 데이타에는 부적절 하다는 내용이었다. 그래서 feature transformation하여 함수에 feed하면 더 좋은 성능을 발현할 수 있는데 이를 end to end 로 구현한게 neural network다. 그리고 neural network
 에서 제일 중요한 개념 중 하나가 등장하는데 바로 backpropagation이다. backpropagation은 뉴럴 네트워크가 기본적으로 학습 가능한 모델이 될 수 있게 하는 핵심적인 개념인데 미적분의 chain rule 에 기반한다. 먼저 input 을 이용해 forward pass를 하고 우리가 알고 싶은 parameter인
 weight 과 bias를 loss에 대해 미분을 여러번 하는 과정을 통해 아무리 복잡한 모델 구조를 갖고 있더라도 기울기를 구할 수 있다.  
+![back-pro](/assets/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a71314d374c47694454697277552d344c634671375f512e706e67.png) _example of back propagation_
