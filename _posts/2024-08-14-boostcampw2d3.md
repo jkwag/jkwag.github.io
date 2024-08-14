@@ -46,7 +46,7 @@ RNN 을 기반으로 하는 모델은 구조 특성상 정보 손실이 발생�
 
 # 과제
 
-이번 과제는 저번 주 과제와 다르게 난이도가 꽤 어렵게 느껴지고 시간도 그만큼 좀 소모가 되었는데 주어진 수식의 backpropagation 과정을 pytorch 를 가져다 안에 있는 메서드를 이용하는게 아니라 scratch 부터 만드는데 chain rule을 하나하나 적용하다 보니 헷갈리는 부분이 있었다. 특히나, 마지막 activation function인 softmax의 gradient를 구하는게 난해했는데 [이 링크의]([https://towardsdatascience.com/derivative-of-the-softmax-function-and-the-categorical-cross-entropy-loss-ffceefc081d1](https://www.michaelpiseno.com/blog/2021/softmax-gradient/)) 의 설명을 통해 쉽게 해결되었는데 요약하자면 softmax의 loss function인 cross entropy 에서 y가 one-hot vector 라는 점을 이용해 단순화시켜 체인룰을 통해 yhat-y가 softmax단에서의 gradient라는 점이 제일 인상 깊었고 풀었을 때 쾌감을 느꼈다. 또, 과제에서 hyperparameter를 내가 임의로 설정해서 모델을 테스트해보는 시간도 있었는데 운 좋게 좋은 결과가 바로 나왔지만 이에 대한 고찰이 더 필요하다고 느꼈다.
+이번 과제는 저번 주 과제와 다르게 난이도가 꽤 어렵게 느껴지고 시간도 그만큼 좀 소모가 되었는데 주어진 수식의 backpropagation 과정을 pytorch 를 가져다 안에 있는 메서드를 이용하는게 아니라 scratch 부터 만드는데 chain rule을 하나하나 적용하다 보니 헷갈리는 부분이 있었다. 특히나, 마지막 activation function인 softmax의 gradient를 구하는게 난해했는데 [이 링크]((https://www.michaelpiseno.com/blog/2021/softmax-gradient/)) 의 설명을 통해 쉽게 해결되었는데 요약하자면 softmax의 loss function인 cross entropy 에서 y가 one-hot vector 라는 점을 이용해 단순화시켜 체인룰을 통해 yhat-y가 softmax단에서의 gradient라는 점이 제일 인상 깊었고 풀었을 때 쾌감을 느꼈다. 또, 과제에서 hyperparameter를 내가 임의로 설정해서 모델을 테스트해보는 시간도 있었는데 운 좋게 좋은 결과가 바로 나왔지만 이에 대한 고찰이 더 필요하다고 느꼈다.
 
 # 마무리
 피어세션과 마스터 세션, 그리고 튜터링 시간에 대해서 풀어써야 하지만 워낙 학습 내용이 방대했고 스케쥴이 바빴기에 주간 마무리하는 회고에 적을 듯 하다. 특히나 이미 강의를 다 들어 어느 정도 분배하는 차원도 있다. 총평하면 이틀동안 배운 학습 내용이 방대했고 이렇게 학습 회고를 쓰고 나서도 다시 한 번 더 훑어 봐야겠다는 다짐을 하게 된다. 나 스스로에게 수고 많았다 얘기하고 싶고 내일 쉬고 주간 마무리 회고로 돌아오겠다.
