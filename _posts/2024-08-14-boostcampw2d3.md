@@ -1,6 +1,6 @@
 ---
 title: "네이버 부스트캠프 2주 2,3일차 회고"
-date: 2024-08-12
+date: 2024-08-14
 categories: [Boostcamp,2주차]
 tags: [boostcamp,neural network,back propagation, rnn, attention, transformer]
 toc: true
