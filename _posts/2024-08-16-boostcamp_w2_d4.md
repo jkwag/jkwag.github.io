@@ -2,7 +2,7 @@
 title: "네이버 부스트캠프 2주 4일차 회고"
 date: 2024-08-16
 categories: [Boostcamp,2주차]
-tags: [boostcamp,transformer, ViT]
+tags: [boostcamp,transformer,viT]
 toc: true
 toc_label: "Table of contents"
 toc_icon: "cog"
