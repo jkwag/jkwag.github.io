@@ -38,7 +38,7 @@ $$\hat{r}_{ui} = \mathbf{q}_i^{\top} \mathbf{p}_u$$
 
 where q represents a vector for each item i and p represents a vector for each user. The matrix form reminds of the famous SVD in linear algebra, but due to the large amount of missing values in the matrix, the incomplete matrix makes SVD ineligible. Imputation has been suggested as a solution to the problem too, but the cost was a major problem. Regularized model was therefore an alternative to alleviate the underlying problem. 
 
-$\(\min_{q^*, p^*} \sum_{(u,i) \in K} \left( r_{ui} - q_{i}^\top p_{u} \right)^2 + \lambda \left( \|q_{i}\|^2 + \|p_{u}\|^2 \right)\)$
+$$\(\min_{q^*, p^*} \sum_{(u,i) \in K} \left( r_{ui} - q_{i}^\top p_{u} \right)^2 + \lambda \left( \|q_{i}\|^2 + \|p_{u}\|^2 \right)\)$$
 
 
 
