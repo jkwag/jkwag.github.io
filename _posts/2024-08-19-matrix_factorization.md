@@ -25,7 +25,12 @@ Collaborative filtering tries to analyze user-item relationships based on past u
 between items or users. In the paper, Saving Private Ryan is mentioned as an example for neighborhood methods. Saving Private Ryan's neighbors would be war movies, Spielberg movies and the users who liked Saving Private Ryan is likely to like its neighbors as well.
 
 
-![Illustrative example of neighborhood method. If Joe liked 3 movies](/assets/neighborhood.png)
+![Illustrative example of neighborhood method. If Joe liked 3 movies, based on the users that liked the movies Joe liked, we can recommend other movies to Joe with the movies the other users liked.](/assets/neighborhood.png)
 
 
-**Latent factor** models are what this paper mainly explains and develop upon. Latent factor models try to characterize both items and users, deduced from users' ratings patterns.  
+**Latent factor** models are what this paper mainly explains and develop upon. Latent factor models try to characterize both items and users, deduced from users' ratings patterns. we can define different dimensions to the model with dimensions we deem influential to users and products.
+And, in the paper, matrix factorization is suggested as a method to realize latent factor models.
+
+# Matrix factorization
+
+Matrix factorization basically creates two matrices, one for user-latent factors and the other for item-latent factors. And, predicted ratings can be calculated by the dot product of two matrices. $\hat{r}_{ui} = \mathbf{q}_i^{\top} \mathbf{p}_u$
