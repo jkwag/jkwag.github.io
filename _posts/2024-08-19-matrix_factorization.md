@@ -80,7 +80,7 @@ With the above model, they were able to improve about 9.46 percent compared to N
 
 ![The graph represents the most important two dimensions in predicting user-movies relationships and as can be seen in the graph, movies that are close together have shared attributes and users are likely prefer movies that belong to one cluster in the graph.](/assets/netflix-matrix.png)
 
-The models' performance was measured by RMSE and as was expected from the explanations above, the model with temporal dynamics was able to achieve the smallest RMSE with RMSE = 0.8563. Also, within the same model, increasing number of parameters improved model's performances attributed to increasing model's dimensionality. Also, it was observed that taking temporal dynamics into account in the model was the most significant improvement in accuracy,  
+The models' performance was measured by RMSE and as was expected from the explanations above, the model with temporal dynamics was able to achieve the smallest RMSE with RMSE = 0.8563. Also, within the same model, increasing number of parameters improved model's performances attributed to increasing model's dimensionality. Also, it was observed that taking temporal dynamics into account in the model was the most significant improvement in accuracy.
 
 # Final Thoughts
 
