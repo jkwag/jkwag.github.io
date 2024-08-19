@@ -33,5 +33,10 @@ And, in the paper, matrix factorization is suggested as a method to realize late
 
 # Matrix factorization
 
-Matrix factorization basically creates two matrices, one for user-latent factors and the other for item-latent factors. And, predicted ratings can be calculated by the dot product of two matrices, $'\hat{r}_{ui} = \mathbf{q}_i^{\top} \mathbf{p}_u'$, where q represents a vector for each item i and p represents a vector for each user. The matrix form reminds of the famous SVD in linear algebra, but due to the large amount of missing values in the matrix, the incomplete matrix makes SVD ineligible. Imputation has been suggested as a solution to the problem too, but the cost was a major problem. Regularized model was therefore an alternative to alleviate the underlying problem.  $'\min_{\mathbf{q}^*, \mathbf{p}^*} \sum_{(u,i) \in \mathcal{K}} \left( r_{ui} - \mathbf{q}_i^{\top} \mathbf{p}_u \right)^2 + \lambda \left( \|\mathbf{q}_i\|^2 + \|\mathbf{p}_u\|^2 \right)'$
+Matrix factorization basically creates two matrices, one for user-latent factors and the other for item-latent factors. And, predicted ratings can be calculated by the dot product of two matrices
+$$\hat{r}_{ui} = \mathbf{q}_i^{\top} \mathbf{p}_u$$ 
+
+where q represents a vector for each item i and p represents a vector for each user. The matrix form reminds of the famous SVD in linear algebra, but due to the large amount of missing values in the matrix, the incomplete matrix makes SVD ineligible. Imputation has been suggested as a solution to the problem too, but the cost was a major problem. Regularized model was therefore an alternative to alleviate the underlying problem. 
+
+$$\min_{\mathbf{q}^*, \mathbf{p}^*} \sum_{(u,i) \in \mathcal{K}} \left( r_{ui} - \mathbf{q}_i^{\top} \mathbf{p}_u \right)^2 + \lambda \left( \|\mathbf{q}_i\|^2 + \|\mathbf{p}_u\|^2 \right)$$
  
