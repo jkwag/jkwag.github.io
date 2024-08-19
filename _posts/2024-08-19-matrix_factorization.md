@@ -23,5 +23,5 @@ work even though predictions can be accurate as much as possible when data is av
 Collaborative filtering tries to analyze user-item relationships based on past user behavior and predict future user-item associations. Collaborative filtering is more often accurate than content filtering with more observed data, however it still suffers from cold start
 , relatively performing worse when new products and users are brought into the system. There are two primary methods that can be used for collaborative filtering, neighborhood methods and latent factor models. Neighborhood methods base their analysis on the relationships
 between items or users. In the paper, Saving Private Ryan is mentioned as an example for neighborhood methods. Saving Private Ryan's neighbors would be war movies, Spielberg movies and the users who liked Saving Private Ryan is likely to like its neighbors as well.
-
+![Illustrative example of neighborhood method. If Joe liked 3 movies][/assets/neighborhood.png]
 **Latent factor** models are what this paper mainly explains and develop upon. Latent factor models try to characterize both items and users, deduced from users' ratings patterns.  
