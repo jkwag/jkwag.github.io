@@ -51,6 +51,41 @@ $q_{i} \leftarrow q_{i} + \gamma \cdot (e_{ui} \cdot p_{u} - \lambda \cdot q_{i}
 
 $p_{u} \leftarrow p_{u} + \gamma \cdot (e_{ui} \cdot q_{I} - \lambda \cdot p_{u})$
 
+with loss function simply subtracting the predicted rating from the actual rating. The above two formulas modify parameters proportional to $\gamma$. Also, alternating least squares can be used assuming one of qi's or pi's being constant and the problem becomes quadratic and solvable by least squares. Advantages alternating least squares has to stochastic gradient descent is parallelization and ones with implicit data, since matrices with implicit data will no more be deemed sparse. 
+
+## Adding biases
+
+adding bises can further improve the method and it makes sense that some users innately give ratings better than other users and some items just attract users more and adding biases can be decomposed into two parts: item bias and user bias. 
+$b_{ui} = \mu + b_{i} + b_{u}$
+and the above bias formula is added to the previous formula to calculate the predicted rating and loss function. 
+
+## Additional inputs
+
+Authors also suggest incorporating additional information about users, especially implicit feedback, namely purchase history and browsing history. And, additional inputs are inputted in boolean values and $N(u)$ denotes the set of items user u implicitly expressed interest in. Each item in N(U) is associated with a vector in f-dimensional space and the user's preference for items can be characterized by 
+$\sqrt{|N(u)|} \sum_{i \in N(u)} x_{i}$ and user attributes can be additionally inputted in the same way denoted by $y_{a}$. 
+
+## Temporal dynamics
+
+Authors pointed out the explained models in the previous sections are all static, failing to explain temoporal changes in user preferences, item biases, and user biases. Intuitively, users might change their taste according to time as trends change continuously. Also, users can rate products higher through time such as a user giving 3 out of 5 giving 4 out 5 later can happen. Also, item's popularity can fade over time due to various factors. But, the author does not take temporal factor into account for q matrix, since items are static if we are to consider item - latent factor relationships.
+
+## Inputs with varying confidence levels
+
+Authors aruge that not all ratings should be used for analysis with equal weight or confidence. For example, massive advertising can interfere with user's true preference when advertising does not influence much. It is suggested that confidence levels can be calculated from available numerical values such as the frequency of actions from users including number of clicks. So, the cost function is further modified by multiplying $c_{ui}$ term to the summationon which completes the following final formula in the paper.
+
+$\min_{(p, q, b)} \sum_{(u,i) \in K} c_{ui} \left( r_{ui} - \mu - b_{u} - b_{i} - p_{u}^\top q_{i} \right)^2 + \lambda \left( \|p_{u}\|^2 + \|q_{i}\|^2 + (b_{u})^2 + (b_{i})^2 \right)$
+
+# Results
+
+With the above model, they were able to improve about 9.46 percent compared to Netflix's system. Factorizing the Netflix's user-movie matrix helped find the most useful dimensions for predicting preferences as shown in the image below. 
+
+![The graph represents the most important two dimensions in predicting user-movies relationships and as can be seen in the graph, movies that are close together have shared attributes and users are likely prefer movies that belong to one cluster in the graph.](/assets/netflix-matrix.png)
+
+The models' performance was measured by RMSE and as was expected from the explanations above, the model with temporal dynamics was able to achieve the smallest RMSE with RMSE = 0.8563. Also, within the same model, increasing number of parameters improved model's performances attributed to increasing model's dimensionality. Also, it was observed that taking temporal dynamics into account in the model was the most significant improvement in accuracy,  
+
+# Final Thoughts
+
+For me, the most impressive part in the paper was to include temporal factors in the model and the justification totally made sense since our preference is quite volatile and we can like one thing today and suddenly put our mind away from it tomorrow. I also wondered how exactly they implemented temporal dynamics in their model but it was just represented as time functions unfortunately. Fianally, as pointed out in the LightGCN paper, I think the method can further be improved by considering user-user relationships and item-item relationships in the model.  
+
 
 
  
