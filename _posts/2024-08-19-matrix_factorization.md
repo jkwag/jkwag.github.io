@@ -8,7 +8,7 @@ toc_label: "Table of contents"
 toc_icon: "cog"
 
 ---
-
+___
 **Disclaimer**
 This blog post is a summary of what I understood reading the paper. This is for personal use and might contain wrong information.
 ___
@@ -86,6 +86,7 @@ The models' performance was measured by RMSE and as was expected from the explan
 
 For me, the most impressive part in the paper was to include temporal factors in the model and the justification totally made sense since our preference is quite volatile and we can like one thing today and suddenly put our mind away from it tomorrow. I also wondered how exactly they implemented temporal dynamics in their model but it was just represented as time functions unfortunately. Fianally, as pointed out in the LightGCN paper, I think the method can further be improved by considering user-user relationships and item-item relationships in the model.  
 
-
-
- 
+___
+Source: Y. Koren, R. Bell and C. Volinsky, "Matrix Factorization Techniques for Recommender Systems," in Computer, vol. 42, no. 8, pp. 30-37, Aug. 2009, doi: 10.1109/MC.2009.263.
+keywords: {Recommender systems;Motion pictures;Filtering;Collaboration;Sea measurements;Predictive models;Genomics;Bioinformatics;Nearest neighbor searches;Computational intelligence;Netflix Prize;Matrix factorization},
+___ 
