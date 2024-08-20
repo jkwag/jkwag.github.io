@@ -55,11 +55,15 @@ Bar plot은 범주에 따른 수치 값을 비교하기에 적합한 방법인�
 ### Line plot
 
 Line plot은 연속적으로 변하는 데이타(점)을 선으로 연결한 그래프인데 시간/순서에 대한 변화, 즉 시계열 데이타 분석에 특화되어 있다. 그래프를 그렸을 떄 노이즈가 많아 시각적 해석을 방해할 때 Moving average 기법을 통해 smoothing을 할 수 있다.
+
 ![line plot](https://wac-cdn.atlassian.com/dam/jcr:526dfc9b-3950-49a8-afcd-fd37ee59782a/line-chart-example-1.png?cdnVersion=2154)
+
 ### Scatter plot
 
 Scatter plot 은 기본적으로 x축, y축의 feature 값에 따라 점의 형태로 데이타가 표시되는데 x축,y축의 feature간 비교에 용이하다. 따라서, 상관관계를 알기 쉬운데 이 때 상관관계와 인과관계를 혼동하는 경우가 있으니 주의해야하는데 인과관계는 도메인 지식을 바탕으로 가정이 들어간다.
+
 ![scatter plot](https://wac-cdn.atlassian.com/dam/jcr:ec88db6d-cf1f-450e-8557-d24c3ef15a39/scatter-plot-example-1.png?cdnVersion=2154)
+
 ## 정형 데이타
 
 정형 데이타는 범주형 데이타, 수치적 데이타로 나눠질 수 있다.
