@@ -36,6 +36,9 @@ print('hello world')
 
 another paragraph
 
+![chatgptimage](https://files.oaiusercontent.com/file-hNx99yRTcie4CXMbfinusQGg?se=2024-08-20T14%3A18%3A18Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dc20ea044-c72c-4296-94de-60d5c83f5e44.webp&sig=amsG1XCMfYlp2/EwTjm1ZvMNhCJE4AzemsLpg5BoOiA%3D)
+
+
  $\frac{1}{\sqrt(2\pi\sigma^2)}e^\frac{(x-\mu)^2}{-2}$
 another line
 [^1]:MIT Opencourseware
