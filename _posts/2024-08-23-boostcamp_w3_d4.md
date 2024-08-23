@@ -1,5 +1,5 @@
 ---
-title: "3주 4일차 회고: 팀으로서의 또 다른 도전"
+title: "부스트캠프 3주 4일차 회고: 팀으로서의 또 다른 도전"
 date: 2024-08-23
 categories: [Boostcamp,3주차]
 tags: [recsys,define problem, report, data]
