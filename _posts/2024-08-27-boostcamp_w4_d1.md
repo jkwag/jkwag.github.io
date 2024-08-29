@@ -6,7 +6,7 @@ tags: [recsys,kl divergence, variational encoder, generative model]
 toc: true
 toc_label: "Table of contents"
 toc_icon: "cog"
-
+published: false
 ---
 
 4주차가 시작되었다. 이번 주도 흥미로운 한 주가 될거라고 예상하는데 일단 깃허브 특강을 연속으로 이틀 듣고 드디어 CV NLP Recsys 도메인 별로 각자 나뉘어 각 도메인에 맞춰진 수업을 듣기에 Recsys에 특화된 수업을 듣는다는 게 기대되고 그러기에 제목을
