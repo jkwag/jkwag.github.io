@@ -44,7 +44,7 @@ Supervised learning 의 목표가 x에서 y를 올바르게 추정하는 모델�
 
 VAE는 대표적인 생성모델 중 하나인데 일단 VAE는 variational autoencoder를 축약한 표현이다. ![vae](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*r1R0cxCnErWgE0P4Q-hI0Q.jpeg)
 
-source:[https://medium.com/geekculture/variational-autoencoder-vae-9b8ce5475f68](https://medium.com/geekculture/variational-autoencoder-vae-9b8ce5475f68)
+source: [https://medium.com/geekculture/variational-autoencoder-vae-9b8ce5475f68](https://medium.com/geekculture/variational-autoencoder-vae-9b8ce5475f68)
 
 이미지에서 x,$xhat$,z에 집중해서 보면 x가 z 가 있는 layer를 거쳐서 다시 x를 예측하는 값을 뱉어내는데 이 떄 z라는 단은 불필요한 정보를 제거한 압축하는 단이라고 얘기할 수 있다. 여기서 z는 hidden layer에 속해있는 말 그대로 hidden variable,
 x와 connection 이 있다 생각하지만 observed data가 아니고 따라서 z의 distribution 을 근사하게 예측할 수 있다면 x 또한 training 을 통해 z로부터 생성이 가능하다.
