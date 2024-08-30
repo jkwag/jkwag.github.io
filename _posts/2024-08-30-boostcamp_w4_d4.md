@@ -58,7 +58,7 @@ $$\geq \sum_{i=1}^{m} \mathbb{E}_{z^{(i)} \sim Q} \left[ \log \left( \frac{P(x^{
 로 Q 를 E 스텝에서 정의할 수 있고 이는 $x^{(i)}$에 conditional 한 $z^{(i)}$의 probability와 동일하다. 총 정리하면 E-step 에서 정해진 $\theta$ value 를 이용해 $Q_i$ 를 posterior 를 이용해 ELBO를 구한 뒤 M-step에서 구한 ELBO에 대해서 MLE를 통해 $\theta$를 업데이트하고
 이를 반복해 converge 할 때 까지 구하는데 $\theta$ 값을 중심으로 한다. 
 
- # VAE
+# VAE
 
  다시 돌아가서, GMM 과 EM Algorithm에서는 $z$ 가 discrete 하고 1차원으로 가정되어 쉽게 posterior 를 구했지만 VAE의 기반이 되는 $z^(i)$ 들은 continuous 하고 multi dimensional 하기 떄문에 구하기가 쉽지 않고 대신 이를 Q를 posterior 최대한 근사가 되는 값으로 설정하는데
 $z$ 를 reparameterize 해서 $z = \mu + \Sigma\epsilon$ 으로 만들어 모델이 학습 가능한 parameter 로 만들어 gradient ascent 방식으로 학습하여 $x$를 출력하는 걸 목적으로 한다고 최종 정리할 수 있다. 즉, EM 알고리즘에서 $\theta$ 만 고려하는 게 아닌 $\mu, \Sigma$ 도 고려한다고
