@@ -48,9 +48,11 @@ source:![https://medium.com/geekculture/variational-autoencoder-vae-9b8ce5475f68
 
 이미지에서 x,$xhat$,z에 집중해서 보면 x가 z 가 있는 layer를 거쳐서 다시 x를 예측하는 값을 뱉어내는데 이 떄 z라는 단은 불필요한 정보를 제거한 압축하는 단이라고 얘기할 수 있다. 여기서 z는 hidden layer에 속해있는 말 그대로 hidden variable,
 x와 connection 이 있다 생각하지만 observed data가 아니고 따라서 z의 distribution 을 근사하게 예측할 수 있다면 x 또한 training 을 통해 z로부터 생성이 가능하다.
-
-![equation](https://www.bruot.org/tex2img/equations/uMPi1eI5JkvWw0Sj8X8RwAa6pSwDLTAJWMmmr6HC3K2q/)
-
+'''math
+\[
+P(x \mid z) = \frac{P(z \mid x) \cdot P(x)}{P(z)}
+\]
+'''
 즉, bayes rule을 이용하여 x와 z의 joint distribution, z의 distribution 을 알면 posterior distribution 을 구할 수 있고 이를 통해 x를 생성 가능하다는 뜻이다. 그러나, 문제는 우리는 z의 distribution 이 뭔지도 모르고 z는 hidden variable 이기 때문에
 근사도 불가능하다. 이는 P(X|Z) 를 통해 해결할 수 있는데 다음과 이어서 적어보겠다.
 
