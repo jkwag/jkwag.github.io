@@ -28,4 +28,4 @@ ___
 SVMs can be applied to general tasks, but fail to learn parameters reliably under very sparse data, whereas specialized factorization models can learn reliably under sparse setting, but fail to be applicable to general tasks.
 Factorization machine models interaction between variables by a factorized parameterization instead of a dense parameterization used in SVMs, leading to the the time complexity of O(n). 
 
-In recsys, we are often encountered with problems where almost all of the elements$$ x_{i} $$of a vector 
+In recsys, we are often encountered with problems where almost all of the elements $$ x_{i} $$ of a vector 
