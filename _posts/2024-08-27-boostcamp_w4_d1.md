@@ -6,7 +6,6 @@ tags: [recsys,kl divergence, variational encoder, generative model]
 toc: true
 toc_label: "Table of contents"
 toc_icon: "cog"
-published: false
 ---
 
 4주차가 시작되었다. 이번 주도 흥미로운 한 주가 될거라고 예상하는데 일단 깃허브 특강을 연속으로 이틀 듣고 드디어 CV NLP Recsys 도메인 별로 각자 나뉘어 각 도메인에 맞춰진 수업을 듣기에 Recsys에 특화된 수업을 듣는다는 게 기대되고 그러기에 제목을
@@ -38,4 +37,26 @@ Task 를 하나의 모델로 수행할 수 있는 모델로 소개되었다.
 
 # 생성모델
 
-Supervised learning 의 목표가 x에서 y를 올바르게 추정하는 모델이 목표라면 **Generative model** 의 목적은 (x,y) 나 (x)가 주어졌을 떄 이 샘플 데이타가 속하는 **distribution** 을 추론하는게 목표이다.
+Supervised learning 의 목표가 x에서 y를 올바르게 추정하는 모델이 목표라면 **Generative model** 의 목적은 (x,y) 나 (x)가 주어졌을 떄 이 샘플 데이타가 속하는 **distribution** 을 추론하는게 목표이다. 셍성 모델이 supervised learning에 비해
+가지는 가장 큰 장점은 데이타의 숨겨진 구조를 파악하기 때문에 x 분포의 다른 샘플 데이타가 주어졌을 때 안정적으로 y를 예측하거나 anomaly detection 등 다양하게 활용될 수 있다.
+
+## VAE
+
+VAE는 대표적인 생성모델 중 하나인데 일단 VAE는 variational autoencoder를 축약한 표현이다. ![vae](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*r1R0cxCnErWgE0P4Q-hI0Q.jpeg)
+
+source:![https://medium.com/geekculture/variational-autoencoder-vae-9b8ce5475f68](https://medium.com/geekculture/variational-autoencoder-vae-9b8ce5475f68)
+
+이미지에서 x,$xhat$,z에 집중해서 보면 x가 z 가 있는 layer를 거쳐서 다시 x를 예측하는 값을 뱉어내는데 이 떄 z라는 단은 불필요한 정보를 제거한 압축하는 단이라고 얘기할 수 있다. 여기서 z는 hidden layer에 속해있는 말 그대로 hidden variable,
+x와 connection 이 있다 생각하지만 observed data가 아니고 따라서 z의 distribution 을 근사하게 예측할 수 있다면 x 또한 training 을 통해 z로부터 생성이 가능하다.
+
+![equation](https://www.bruot.org/tex2img/equations/uMPi1eI5JkvWw0Sj8X8RwAa6pSwDLTAJWMmmr6HC3K2q/)
+
+즉, bayes rule을 이용하여 x와 z의 joint distribution, z의 distribution 을 알면 posterior distribution 을 구할 수 있고 이를 통해 x를 생성 가능하다는 뜻이다. 그러나, 문제는 우리는 z의 distribution 이 뭔지도 모르고 z는 hidden variable 이기 때문에
+근사도 불가능하다. 이는 P(X|Z) 를 통해 해결할 수 있는데 다음과 이어서 적어보겠다.
+
+# 마치며
+
+1일차에 이번 주의 커리큘럼을 확인하니 확실히 추천 시스템의 수학적인 근간을 설명하고 있어 쉽지 않아 보이지만 **도전**에 직면했을 떄 내가 **몰입함**을 느끼고 있어 앞으로 기대된다.
+
+
+
