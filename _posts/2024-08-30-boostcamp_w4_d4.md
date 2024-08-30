@@ -31,7 +31,7 @@ $\phi, \mu, \Sigma$ 에 대한 MLE 를 구하면 된다.
 
 Jensen's inequality가 EM Algorithm 을 통해 MLE 를 구하는 도구로 사용된다. Jensen's inequality 는 convex 한 함수에 대해 RV X 가 있다면 $f(EX) \leq E(f(X))$ 로 나타내는데
 
-![jensen's inequality](https://www.probabilitycourse.com/images/chapter6/Convex_b.png)
+![image](https://github.com/user-attachments/assets/8c80bf5b-4e9d-4ce0-8fde-4adde12a21d9)
 
 source: https://www.probabilitycourse.com/chapter6/6_2_5_jensen%27s_inequality.php
 
