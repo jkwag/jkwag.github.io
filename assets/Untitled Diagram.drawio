@@ -1,9 +1,35 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15" version="24.7.8">
   <diagram name="Page-1" id="_vfY5IbgvSqahNNpE4-4">
-    <mxGraphModel>
+    <mxGraphModel dx="2074" dy="1162" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Zchugz3P0TIId34J4t58-3" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="140" as="sourcePoint" />
+            <mxPoint x="60" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="490" y="900" />
+              <mxPoint x="150" y="600" />
+              <mxPoint x="80" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zchugz3P0TIId34J4t58-4" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="650" as="sourcePoint" />
+            <mxPoint x="610" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zchugz3P0TIId34J4t58-5" value="x1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="191" y="659" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Zchugz3P0TIId34J4t58-6" value="x2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="591" y="469" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Zchugz3P0TIId34J4t58-7" value="e(x)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="356" y="779" width="50" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
