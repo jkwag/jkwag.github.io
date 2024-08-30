@@ -6,7 +6,7 @@ tags: [matrix factorization,collaborative filtering,netflix prize, recsys]
 toc: true
 toc_label: "Table of contents"
 toc_icon: "cog"
-
+math:true
 ---
 ___
 **Disclaimer**
@@ -42,9 +42,13 @@ where q represents a vector for each item i and p represents a vector for each u
 
 avoiding overfitting by penalizing on magnitudes of q and p matrices and constant $\lambda\$ controls the extent of regularization. There are two learning algorithms that can be be used for this matrix factorization. Stochastic gradient descent is popularized by Simon Funk updating parameters with the following two formulas. 
 
-$q_{i} \leftarrow q_{i} + \gamma \cdot (e_{ui} \cdot p_{u} - \lambda \cdot q_{i})$
+$$
+q_{i} \leftarrow q_{i} + \gamma \cdot (e_{ui} \cdot p_{u} - \lambda \cdot q_{i})
+$$
 
-$p_{u} \leftarrow p_{u} + \gamma \cdot (e_{ui} \cdot q_{I} - \lambda \cdot p_{u})$
+$$
+p_{u} \leftarrow p_{u} + \gamma \cdot (e_{ui} \cdot q_{I} - \lambda \cdot p_{u})
+$$
 
 with loss function simply subtracting the predicted rating from the actual rating. The above two formulas modify parameters proportional to $\gamma$. Also, alternating least squares can be used assuming one of qi's or pi's being constant and the problem becomes quadratic and solvable by least squares. Advantages alternating least squares has to stochastic gradient descent is parallelization and ones with implicit data, since matrices with implicit data will no more be deemed sparse. 
 
@@ -67,7 +71,9 @@ Authors pointed out the explained models in the previous sections are all static
 
 Authors aruge that not all ratings should be used for analysis with equal weight or confidence. For example, massive advertising can interfere with user's true preference when advertising does not influence much. It is suggested that confidence levels can be calculated from available numerical values such as the frequency of actions from users including number of clicks. So, the cost function is further modified by multiplying $c_{ui}$ term to the summationon which completes the following final formula in the paper.
 
-$\min_{(p, q, b)} \sum_{(u,i) \in K} c_{ui} \left( r_{ui} - \mu - b_{u} - b_{i} - p_{u}^\top q_{i} \right)^2 + \lambda \left( \|p_{u}\|^2 + \|q_{i}\|^2 + (b_{u})^2 + (b_{i})^2 \right)$
+$$
+\min_{(p, q, b)} \sum_{(u,i) \in K} c_{ui} \left( r_{ui} - \mu - b_{u} - b_{i} - p_{u}^\top q_{i} \right)^2 + \lambda \left( \|p_{u}\|^2 + \|q_{i}\|^2 + (b_{u})^2 + (b_{i})^2 \right)
+$$
 
 # Results
 
