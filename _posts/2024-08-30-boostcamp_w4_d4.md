@@ -1,6 +1,6 @@
 ---
 title: "부스트캠프 4주 4일차 회고: 집착"
-date: 2024-08-27
+date: 2024-08-30
 categories: [Boostcamp,4주차]
 tags: [recsys,elbo,em algorithm, variational encoder, generative model]
 toc: true
