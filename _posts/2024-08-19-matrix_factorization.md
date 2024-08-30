@@ -6,7 +6,7 @@ tags: [matrix factorization,collaborative filtering,netflix prize, recsys]
 toc: true
 toc_label: "Table of contents"
 toc_icon: "cog"
-math:true
+math: true
 ---
 ___
 **Disclaimer**
