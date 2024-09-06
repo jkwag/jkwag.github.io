@@ -1,7 +1,7 @@
 ---
 title: "부스트캠프 5주 2일차 회고: 피로"
 date: 2024-09-04
-categories: [Boostcamp,4주차]
+categories: [Boostcamp,5주차]
 tags: [recsys, mult-vae, mcmc, gibbs sampling, influence function]
 toc: true
 toc_label: "Table of contents"
