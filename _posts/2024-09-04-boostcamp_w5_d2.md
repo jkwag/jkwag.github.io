@@ -23,11 +23,11 @@ $p(z|x)$ 에서 샘플링 하는 방법이다. 기본적인 MC 방법들에는 *
 
 이러한 조건을 만족할 때 detailed balance 상태를 만족하고 stationary 하다. 대표적인 MCMC를 기반한 알고리즘은 **Metropolis Hastings** 알고리즘이 있다. Metropolis 
 
-<img width = "200" src = "https://github.com/user-attachments/assets/5da549fc-8a42-4e88-b439-79ce048918c5">
+<img width="200" alt ="Screenshot" src="https://github.com/user-attachments/assets/5da549fc-8a42-4e88-b439-79ce048918c5">
 
 로 샘플링 후보가 있을 때 이 확률 비율이 1보다 크면 무조건 받아들이고 1보다 작으면 그 확률 비율상 후보를 받아들이고 업데이트 하고 proposal distribution이 symmetric 한 데 반해 Metropolis Hastings는
 
-<img width = "200" src = "https://github.com/user-attachments/assets/c61896c1-e1ae-4a5b-845b-858af3452028">
+<img width = "200" alt = "Screenshot formula" src = "https://github.com/user-attachments/assets/c61896c1-e1ae-4a5b-845b-858af3452028">
 
 symmetric 한 조건이 빠지지만 proposal distribution에서의 샘플링 확률도 함께 들어간 것을 볼 수 있다. Metropolis Hastings는 고차원에서 위에 언급된 rejection sampling 이나 importance sampling 보다 상대적으로 잘 작동하지만 여전히 slow convergenc 문제가 발생할 수 있는데 이를 해결할 수 있는 다른 방법은 gibbs sampling 이 있다.
 
