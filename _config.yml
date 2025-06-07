@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Blog by Jeongmoo Kwag # the main title
 
-tagline: Features personal blog posts   # it will display as the sub-title
+tagline: Features blog posts about what I study and am interested in   # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
 
