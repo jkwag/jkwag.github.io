@@ -14,9 +14,9 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: AI blog by Jeongmoo Kwag # the main title
+title: Blog by Jeongmoo Kwag # the main title
 
-tagline: blog posts related to AI # it will display as the sub-title
+tagline: Features personal blog posts   # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
 
