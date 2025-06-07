@@ -1,7 +1,7 @@
 ---
 title: "멸종위기 대장균"
 date: 2025-06-07
-categories: [sql coding]
+categories: [sql_coding]
 tags: []
 toc: true
 toc_label: "Table of contents"
