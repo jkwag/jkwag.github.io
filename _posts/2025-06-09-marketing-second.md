@@ -1,6 +1,6 @@
 ---
 title: "매경: 마케팅 후반"
-date: 2025-06-08
+date: 2025-06-09
 categories: [매경]
 tags: []
 toc: true
