@@ -55,4 +55,36 @@ $$ E(R_{p}) = R_{F} + \frac{[E(R_{M}) - R{F}]}{\sigma_{M}}\sigma_{P}$$
 - **Sensitivity of stock returns to market movements**
 - Equation:
 
-$$ B_{i} = \frac{covariance of Asset i's return with the market return}{variance of the market return} = \fraction{Cov_{i,M}}{\sigma^{2}_{M}} = p_{i,M}\times \frac{\sigma_{i}}{\sigma_{M}}
+$$
+B_i
+= \frac{\mathrm{Cov}(R_i, R_M)}{\sigma_M^2}
+= p_{i,M}\times\frac{\sigma_i}{\sigma_M}
+$$
+
+
+## Performance measures
+
+- SPI
+  - Based on standard deviation of a portfoio
+  - Equation:
+
+$$
+\frac{E(R_{p}) - R_{F}}{\sigma_{p}}
+$$
+
+- TPI
+  - Baed on beta
+  - Equation:
+
+$$
+\frac{E(R_{p}) - R_{F}}{\beta_{p}}
+$$
+
+- JPI
+  - Based on beta
+  - Equation: $\alpha_{p} = E(R_{p}) - {R_{F} + [E(R_{M}) - R_{F}]\beta_{p}}$
+
+- Three relative performance metrics
+  - Tracking error = $\sqrt{\frac{\sum{(R_{p} - R_{B})^2}}{n-1}}$
+  - IR = $\frac{E(R_{p} - R_{B})}{tracking error} = \frac{active return}{active risk}$
+  - Sortino = $\frac{R_{p} - R_{MIN}}{downside deviation} $
